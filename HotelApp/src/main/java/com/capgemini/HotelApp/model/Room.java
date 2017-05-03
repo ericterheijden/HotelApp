@@ -5,6 +5,15 @@ package com.capgemini.HotelApp.model;
  */
 public class Room {
 
+    public Room(int number,String type, double price){
+        this.number=number;
+        this.type=type;
+        this.price=price;
+
+    }
+
+    public Room() {}
+
     private int number;
     private String type;
     private double price;
