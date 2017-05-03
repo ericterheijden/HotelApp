@@ -7,7 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
-// is in staat data te returneren naar de browser
+// een @ staat voor annotatie (ook @Override)
+// het is een referentie naar een stukje code
+
+// controller is in staat data te returneren naar de browser
+// Naam van de controller kan misschien worden veranderd naar iets relevanters 
+
 
 public class HomeController {
     @RequestMapping("/")
