@@ -7,6 +7,17 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
+
+public class HomeController {
+    @RequestMapping("/")
+    // is gelijk aan @RequestMapping(value = "/", RequestMethod=GET
+    // Gebruik ee
+    public String home (){
+        return "Hello World";
+    }
+}
+
+
 // een @ staat voor annotatie (ook @Override)
 // het is een referentie naar een stukje code
 // Wat het eigenlijk doet is kijken of er restcontrollers zijn
@@ -16,12 +27,3 @@ import org.springframework.web.bind.annotation.RestController;
 
 // controller is in staat data te returneren naar de browser
 // Naam van de controller kan misschien worden veranderd naar iets relevanters
-
-
-public class HomeController {
-    @RequestMapping("/")
-    //
-    public String home (){
-        return "Hello World";
-    }
-}
