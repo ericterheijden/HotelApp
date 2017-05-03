@@ -14,6 +14,8 @@ public class PageController {
     @RequestMapping(value = "/api/page", method = RequestMethod.GET)
     public Page pagina() {
         Page page = new Page();
+        page.setTitle("Wordpress document");
+        page.setContent("Saaie blogs");
         return page;
     }
 }

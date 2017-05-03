@@ -4,9 +4,9 @@ package com.capgemini.HotelApp.model;
  * Created by EHEIJDEN on 3-5-2017.
  */
 public class Page {
-    public String title = "wordpress";
+    public String title;
 
-    public String content = "blogs";
+    public String content;
 
     public String getTitle() {
         return title;
