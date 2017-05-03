@@ -7,6 +7,7 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
+  <!-- Zo kun je Spring gebruiken, don't forget -->
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
@@ -28,6 +29,7 @@
       <scope>test</scope>
     </dependency>
 
+    <!-- Zo kun je Spring gebruiken, don't forget -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
