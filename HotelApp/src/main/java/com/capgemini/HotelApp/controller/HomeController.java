@@ -19,9 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 public class HomeController {
-    @RequestMapping("/")
-    //
-    public String home (){
-        return "Hello World";
+    @RequestMapping(value="/rooms", method= RequestMethod.GET)
+       public Room room(@PathVariable()){
+        Room room = new Room();
     }
 }
