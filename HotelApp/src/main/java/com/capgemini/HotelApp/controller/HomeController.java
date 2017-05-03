@@ -26,4 +26,12 @@ public class HomeController {
         room.setType(extra);
         return room;
     }
+
+    @RequestMapping(value="/rooms", method= RequestMethod.POST)
+    public Room postroom(@RequestBody Room room){
+         room.setNumber(88);
+           return room;
+    }
+
+
 }
