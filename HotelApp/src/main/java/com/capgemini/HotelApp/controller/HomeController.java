@@ -26,4 +26,4 @@ public class HomeController {
 // Zit er geen RequestMapping in (wat niet vaak voorkomt) dan alsnog naar public
 
 // controller is in staat data te returneren naar de browser
-// Naam van de controller kan misschien worden veranderd naar iets relevanters
+    // Naam van de controller kan misschien worden veranderd naar iets relevanters
