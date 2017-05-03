@@ -19,15 +19,16 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class HomeController {
-    @RequestMapping(value="/rooms", method= RequestMethod.GET)
-       public Room room(@RequestParam int input, @RequestParam String extra){
+    @RequestMapping(value="/api/rooms", method= RequestMethod.GET)
+       public Room room(){
         Room room = new Room();
-        room.setNumber(input);
-        room.setType(extra);
+        room.setNumber(1);
+        room.setType("standaard");
+        room.setPrice(89.75);
         return room;
     }
 
-    @RequestMapping(value="/rooms", method= RequestMethod.POST)
+    @RequestMapping(value="/api/rooms", method= RequestMethod.POST)
     public Room postroom(@RequestBody Room room){
          room.setNumber(88);
            return room;
