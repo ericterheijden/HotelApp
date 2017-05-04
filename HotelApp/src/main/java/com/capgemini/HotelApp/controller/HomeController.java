@@ -1,5 +1,7 @@
 package com.capgemini.HotelApp.controller;
-import com.capgemini.HotelApp.model.Room;
+import com.capgemini.HotelApp.model.kamers.ETypeRoom;
+import com.capgemini.HotelApp.model.kamers.Luxe;
+import com.capgemini.HotelApp.model.kamers.Room;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -23,7 +25,7 @@ public class HomeController {
        public Room room(){
         Room room = new Room();
         room.setNumber(1);
-        room.setType("standaard");
+        room.setType(ETypeRoom.Luxe);
         room.setPrice(89.75);
         return room;
     }

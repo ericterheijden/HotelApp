@@ -1,21 +1,19 @@
-package com.capgemini.HotelApp.model;
+package com.capgemini.HotelApp.model.kamers;
 
 /**
  * Created by JVERDUIJ on 3-5-2017.
  */
 public class Room {
 
-    public Room(int number,String type, double price){
+    public Room(int number, ETypeRoom type, double price){
         this.number=number;
-        this.type=type;
         this.price=price;
-
+        this.type=type;
     }
 
     public Room() {}
 
     private int number;
-    private String type;
     private double price;
 
     public int getNumber() {
@@ -26,14 +24,6 @@ public class Room {
         this.number = number;
     }
 
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
     public double getPrice() {
         return price;
     }
@@ -42,5 +32,13 @@ public class Room {
         this.price = price;
     }
 
+    private ETypeRoom type;
 
+    public void setType(ETypeRoom type) {
+        this.type = type;
+    }
+
+    public ETypeRoom getType(){
+        return type;
+    }
 }
